@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo más suave (gris claro) -->
+    <solid android:color="#F5F5F5" />
+
+    <stroke
+        android:color="#A67C52"
+        android:width="2dp" />
+    <corners android:radius="8dp" />
+
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" />
+</shape>

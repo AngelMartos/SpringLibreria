@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar sesión"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_carrito"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="Carrito"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_back"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Volver" />
+
+    <item
+        android:id="@+id/action_popular"
+        android:title="Popular"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+</menu>

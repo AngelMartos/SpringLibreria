@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema principal del proyecto -->
+    <style name="Theme.ProyectoFinal2" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#795548</item> <!-- Marrón medio (tono madera) -->
+        <item name="colorPrimaryDark">#5D4037</item> <!-- Marrón oscuro -->
+        <item name="colorAccent">#D7CCC8</item> <!-- Marrón claro/beige -->
+    </style>
+
+    <!-- Tema alternativo si es necesario -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personalización del color y otros elementos del tema -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
+

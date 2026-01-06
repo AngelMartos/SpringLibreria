@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sepiaBackground">#FFF4E1</color>
+    <color name="textPrimary">#4A3B31</color>
+    <color name="textSecondary">#5C5753</color>
+    <color name="textSubtle">#8D6E63</color>
+    <color name="lavender">#8692f7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="background_brown_light">#F5EDEB</color>
+        <color name="light_brown">#D3B897</color>
+
+    <color name="button_color">#A66E4D</color>
+    <color name="button_register_border">#D8A77A</color>
+
+    <color name="gold">#FFD700</color>
+
+
+    <color name="colorPrimary">#795548</color>
+        <color name="colorPrimaryDark">#5D4037</color>
+        <color name="colorAccent">#D7CCC8</color>
+
+
+
+
+
+
+</resources>
+

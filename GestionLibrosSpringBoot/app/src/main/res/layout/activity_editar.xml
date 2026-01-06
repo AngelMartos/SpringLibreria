@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Etiqueta para Título -->
+        <TextView
+            android:id="@+id/tituloLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4A3B31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="270dp"/>
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:background="@drawable/text_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tituloLabel"
+            android:layout_marginTop="8dp" />
+
+        <!-- Etiqueta para Autor -->
+        <TextView
+            android:id="@+id/autorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4A3B31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtTitulo"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="270dp"/>
+
+        <EditText
+            android:id="@+id/edtAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Autor"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:background="@drawable/text_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/autorLabel"
+            android:layout_marginTop="8dp" />
+
+        <!-- Etiqueta para Precio -->
+        <TextView
+            android:id="@+id/precioLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4A3B31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtAutor"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="270dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/text_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/precioLabel"
+            android:layout_marginTop="8dp" />
+
+        <!-- Etiqueta para Stock -->
+        <TextView
+            android:id="@+id/stockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4A3B31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPrecio"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="270dp"/>
+
+        <EditText
+            android:id="@+id/edtStock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:background="@drawable/text_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stockLabel"
+            android:layout_marginTop="8dp" />
+
+        <!-- Etiqueta para Imagen URL -->
+        <TextView
+            android:id="@+id/imagenUrlLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen URL"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4A3B31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtStock"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="232dp"/>
+
+        <EditText
+            android:id="@+id/edtImagenUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Imagen URL"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:background="@drawable/text_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagenUrlLabel"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEsPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es popular"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="16dp"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/btnEliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtImagenUrl"
+        android:layout_marginTop="24dp" />
+
+        <!-- Botón Eliminar -->
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eliminar"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/btnGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtImagenUrl"
+        android:layout_marginTop="24dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

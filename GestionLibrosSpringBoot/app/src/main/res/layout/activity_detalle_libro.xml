@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:spacing="16dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imagenLibroImageView"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:contentDescription="Imagen del libro"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título del libro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/fantasy" />
+        <TextView
+            android:id="@+id/autorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor del libro"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="start"
+            android:textColor="#757575"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/fantasy"/>
+
+        <TextView
+            android:id="@+id/precioTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio: XX.XX"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="start"
+            android:textColor="#757575"
+            android:layout_marginLeft="20dp"
+           />
+
+        <TextView
+            android:id="@+id/stockTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock: 10 disponibles"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="start"
+            android:textColor="#757575"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/cantidadEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+
+
+        <Button
+            android:id="@+id/reservarButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Reservar"
+            android:textColor="@color/black"
+            android:background="@drawable/button_regsiter_border"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fantasy"
+            android:padding="11dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
